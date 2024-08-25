@@ -33,7 +33,7 @@
         }
     </script>
     <style>
-        .banner-container{
+        .banner-container {
             background-image: url('/asstes/banner.png');
             background-color: #F5E6E0;
             background-position: center;
@@ -45,7 +45,7 @@
 <body class="font-jostFont">
     <header>
         <!-- navigation styles start -->
-        <nav>
+        <nav class="">
             <div class="navbar md:justify-center justify-between pt-5  md:w-5/6 mx-auto">
                 <div class="">
                     <a class="cursor-pointer">
@@ -119,8 +119,8 @@
                             <img src="../asstes/slideshow-character1.png" class="w-full" />
                         </div>
                     </div>
-                    <div class="absolute left-5 bottom-0 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
+                    <div class="absolute left-5 bottom-0 flex gap-4 -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -150,8 +150,292 @@
         </section>
         <!-- carousel end-->
     </header>
-    <main>
-
+    <main class=" md:w-10/12 mx-auto p-5 md:mt-20">
+        <section class="collection-container">
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-5">
+                <div class="col-span-2 row-span-2">
+                    <img src="./asstes/collection_grid_1.jpg" alt="">
+                    <div class="absolute -bottom-[36rem] left-52 font-medium">
+                        <p>Hot List</p>
+                        <div class="text-2xl uppercase">
+                            <span class="font-bold">Women </span>
+                            Collection
+                        </div>
+                        <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer">Shop
+                            Now</span>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <img src="./asstes/collection_grid_2.jpg" alt="">
+                    <div class="absolute ml-8 -bottom-32">
+                        <p>Hot List</p>
+                        <div class="text-2xl uppercase font-medium">
+                            <span class="font-bold">Men </span>
+                            Collection
+                        </div>
+                        <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer">Shop
+                            Now</span>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <img src="./asstes/collection_grid_3.jpg" alt="">
+                    <div class="absolute ml-8 -bottom-[36rem]">
+                        <p>Hot List</p>
+                        <div class="text-2xl uppercase font-medium">
+                            <span class="font-bold">Kids </span>
+                            Collection
+                        </div>
+                        <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer">Shop
+                            Now</span>
+                    </div>
+                </div>
+                <div class="bg-[#f5e6e0] pt-48 pl-4">
+                    <div class="text-2xl uppercase font-medium">
+                        <span class="font-bold">E-Gift </span>
+                        Cards
+                    </div>
+                    <p class="md:w-9/12 my-2">Surprise someone with the gift they really want. </p>
+                    <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer font-medium">Shop
+                        Now</span>
+                </div>
+            </div>
+        </section>
+        <section class="items-container mt-20">
+            <div>
+                <div class="content-text">
+                    <h3 class="text-center font-semibold text-4xl">Our Trendy <span class="font-bold">Products</span>
+                    </h3>
+                </div>
+                <div class="flex items-center justify-center gap-5 text-gray-500 text-xl font-medium uppercase mt-8">
+                    <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
+                        ALL</p>
+                    <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
+                        New Arrivals</p>
+                    <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
+                        Best Seller</p>
+                    <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
+                        Top Rated</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-8 md:mt-14">
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_2-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_3-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_4.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_5-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_6.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_7.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-none">
+                    <figure class="h-[430px]">
+                        <img class="" src="./asstes/product_8-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p>Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" checked="checked" />
+                              </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket $29</p>
+                        <div class="card-actions justify-between">
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                            </div>
+                            <span>8k+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
