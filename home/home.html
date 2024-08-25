@@ -16,24 +16,27 @@
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/d0e17ced7d.js" crossorigin="anonymous"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#737373',
-                    },
-                    fontFamily: {
-                        jostFont: 'Jost',
-                    },
-                    backgroundImage: {
-                        imageOne: "url('../asstes/banner')",
-                    },
-                },
-            },
-        }
+        // tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'slide-up': {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-up': 'slide-up 0.5s ease-out forwards',
+      },
+    },
+  },
+  plugins: [],
+};
+
     </script>
     <style>
-        .banner-container {
+        .banner-container{
             background-image: url('/asstes/banner.png');
             background-color: #F5E6E0;
             background-position: center;
@@ -100,53 +103,55 @@
         <!-- navigation styles start -->
         <!-- carousel start-->
         <section
-            class="banner-container w-11/12 mx-auto md:px-20 border-8 border-solid border-white outline outline-gray-200 outline-2">
-            <div class="flex items-center justify-around">
-                <!-- <div>
-                    <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
-                        <div class="bg-[#c32929] w-14 h-1"></div>
-                        <p class="">New Trend</p>
+            class="banner-container w-11/12 mx-auto border-8 border-solid border-white outline outline-gray-200 outline-2">
+            <div class="carousel cellimg w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="md:flex justify-around items-center mx-auto">
+                        <div class="">
+                            <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
+                                <div class="bg-[#c32929] w-14 h-1"></div>
+                                <p class="">New Trend</p>
+                            </div>
+                            <h1 class="md:text-7xl text-xl uppercase">Summer Sale Stylish</h1>
+                            <h1 class="md:text-7xl text-xl uppercase font-bold my-5">Womans</h1>
+                            <span class="font-semibold bg-transparent border-b-2 border-black border-solid">
+                                <button class=""> Discover more</button>
+                            </span>
+                        </div>
+                        <div class=" mt-10">
+                            <img src="../asstes/slideshow-character1.png" class="w-full" />
+                        </div>
                     </div>
-                    <h1 class="text-7xl uppercase">Summer Sale Stylish</h1>
-                    <h1 class="text-7xl uppercase font-bold my-5">Womans</h1>
-                    <span class="font-semibold bg-transparent border-b-2 border-black border-solid">
-                        <button class=""> Discover more</button>
-                    </span>
-                </div> -->
-                <div class="carousel">j
-                    <div id="slide1" class="carousel-item relative w-full">
-                        <div class="flex items-center">
-                            <div class="">
-                                <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
-                                    <div class="bg-[#c32929] w-14 h-1"></div>
-                                    <p class="">New Trend</p>
-                                </div>
-                                <h1 class="text-7xl uppercase">Summer Sale Stylish</h1>
-                                <h1 class="text-7xl uppercase font-bold my-5">Womans</h1>
-                                <span class="font-semibold bg-transparent border-b-2 border-black border-solid">
-                                    <button class=""> Discover more</button>
-                                </span>
-                            </div>
-                            <div class="">
-                                <img src="../asstes/slideshow-character1.png" class="w-full" />
-                            </div>
-                        </div>
-                        <div class="absolute left-5 bottom-0 flex -translate-y-1/2 transform ">
-                            <a href="#slide4" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
-                        </div>
+                    <div class="absolute left-5 bottom-0 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-9xl font-bold uppercase rotate-90 absolute right-0">
-                        Summer
-                    </h3>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="md:flex justify-around items-center mx-auto">
+                        <div class="">
+                            <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
+                                <div class="bg-[#c32929] w-14 h-1"></div>
+                                <p class="">Summer 2024</p>
+                            </div>
+                            <h1 class="md:text-7xl text-xl font-bold uppercase">Hello New Season</h1>
+                            <h1 class=" text-xl uppercase  my-5">Limited Time Offer - Up to 60% off & Free Shipping</h1>
+                            <span class="font-semibold bg-transparent border-b-2 border-black border-solid">
+                                <button class=""> Discover more</button>
+                            </span>
+                        </div>
+                        <div class=" mt-10">
+                            <img src="../asstes/slideshow-character2.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 bottom-0 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-
         </section>
         <!-- carousel end-->
-
     </header>
     <main>
 
