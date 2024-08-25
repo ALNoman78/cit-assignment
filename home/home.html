@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uomo</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- daisyUi + tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/d0e17ced7d.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#737373',
+                    },
+                    fontFamily: {
+                        jostFont: 'Jost',
+                    },
+                    backgroundImage: {
+                        imageOne: "url('../asstes/banner')",
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .banner-container {
+            background-image: url('/asstes/banner.png');
+            background-color: #F5E6E0;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="font-jostFont">
+    <header>
+        <!-- navigation styles start -->
+        <nav>
+            <div class="navbar bg-base-100 md:justify-center justify-between pt-12">
+                <div class="">
+                    <a class="cursor-pointer">
+                        <img src="../asstes/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar-center ml-12 hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 uppercase font-semibold text-[#1b1b1b]">
+                        <li><a class="text-[#222222]">Home</a></li>
+                        <li><a href="">Shop</a>
+                        <li>
+                        <li><a>Blog</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden md:flex gap-6">
+                    <i class="fa-solid fa-magnifying-glass text-lg font-semibold cursor-pointer"></i>
+                    <i class="fa-solid fa-user text-lg font-semibold cursor-pointer"></i>
+                    <i class="fa-solid fa-heart text-lg font-semibold cursor-pointer"></i>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </div>
+                    <i class="fa-solid fa-bars text-lg font-semibold cursor-pointer"></i>
+                </div>
+                <!-- dropdown left -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation styles start -->
+        <!-- carousel start-->
+        <section
+            class="banner-container w-11/12 mx-auto md:px-20 border-8 border-solid border-white outline outline-gray-200 outline-2">
+            <div class="flex items-center justify-around">
+                <div>
+                    <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
+                        <div class="bg-[#c32929] w-14 h-1"></div>
+                        <p class="">New Trend</p>
+                    </div>
+                    <h1 class="text-7xl uppercase">Summer Sale Stylish</h1>
+                    <h1 class="text-7xl uppercase font-bold my-5">Womans</h1>
+                    <span class="font-semibold bg-transparent border-b-2 border-black border-solid">
+                        <button class=" outline-none border-none"> Discover more</button>
+                    </span>
+                </div>
+                <div class="carousel">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="../asstes/slideshow-character1.png" class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- carousel end-->
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
