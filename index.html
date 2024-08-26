@@ -42,8 +42,9 @@
 
         .template {
             background-image: url("./asstes/deal_timer_bg.jpg");
-            background-position: center;
+            background-position: 64%;
             background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -51,7 +52,7 @@
 <body class="font-jostFont">
     <header>
         <!-- navigation styles start -->
-        <nav class="">
+        <nav class="fixed bg-white w-full z-10">
             <div class="navbar md:justify-center justify-between pt-5  md:w-5/6 mx-auto">
                 <div class="">
                     <a class="cursor-pointer">
@@ -158,10 +159,10 @@
     </header>
     <main class="md:mt-20">
         <section class="collection-container  md:w-10/12 mx-auto">
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-5">
+            <div class="grid md:grid-cols-4 grid-cols-1 md:gap-5 gap-1 p-3">
                 <div class="col-span-2 row-span-2">
-                    <img src="./asstes/collection_grid_1.jpg" alt="">
-                    <div class="absolute -bottom-[36rem] left-52 font-medium">
+                    <img class="md:h-auto h-[285px] object-cover relative w-full" src="./asstes/collection_grid_1.jpg" alt="">
+                    <div class="absolute md:-bottom-[36rem] md:left-52 left-8 -bottom-[12rem] font-medium ">
                         <p>Hot List</p>
                         <div class="text-2xl uppercase">
                             <span class="font-bold">Women </span>
@@ -172,8 +173,8 @@
                     </div>
                 </div>
                 <div class="col-span-2">
-                    <img src="./asstes/collection_grid_2.jpg" alt="">
-                    <div class="absolute ml-8 -bottom-32">
+                    <img class="md:h-auto h-[285px] object-cover relative w-full" src="./asstes/collection_grid_2.jpg " alt="">
+                    <div class="absolute ml-8 md:-bottom-[16rem] -bottom-[27rem]">
                         <p>Hot List</p>
                         <div class="text-2xl uppercase font-medium">
                             <span class="font-bold">Men </span>
@@ -183,9 +184,9 @@
                             Now</span>
                     </div>
                 </div>
-                <div class="col-span-1">
-                    <img src="./asstes/collection_grid_3.jpg" alt="">
-                    <div class="absolute ml-8 -bottom-[36rem]">
+                <div class="md:col-span-1 col-span-2">
+                    <img class="md:h-auto h-[285px] object-cover relative w-full" src="./asstes/collection_grid_3.jpg" alt="">
+                    <div class="absolute ml-8 md:-bottom-[41rem] -bottom-[47rem] ">
                         <p>Hot List</p>
                         <div class="text-2xl uppercase font-medium">
                             <span class="font-bold">Kids </span>
@@ -195,7 +196,7 @@
                             Now</span>
                     </div>
                 </div>
-                <div class="bg-[#f5e6e0] pt-48 pl-4">
+                <div class="bg-[#f5e6e0] pt-48 pb-4 pl-4 md:col-span-1 col-span-2">
                     <div class="text-2xl uppercase font-medium">
                         <span class="font-bold">E-Gift </span>
                         Cards
@@ -209,11 +210,11 @@
         <section class="items-container mt-20  md:w-10/12 mx-auto">
             <div>
                 <div class="content-text">
-                    <h3 class="text-center font-semibold text-4xl">Our Trendy <span class="font-bold">Products</span>
+                    <h3 class="text-center font-semibold md:text-4xl text-3xl">Our Trendy <span class="font-bold">Products</span>
                     </h3>
                 </div>
                 <div
-                    class="flex items-center justify-center gap-5 text-gray-500 text-xl font-medium uppercase mt-8 -pb-4">
+                    class="flex items-center justify-center gap-5 text-gray-500 font-medium uppercase mt-8 pb-4 md:text-xl text-sm flex-wrap">
                     <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
                         ALL</p>
                     <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
@@ -224,23 +225,23 @@
                         Top Rated</p>
                 </div>
             </div>
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-8 md:mt-14">
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img id="#add hover:inline-block" class="" src="./asstes/product_1.jpg" alt="Shoes" />
+            <div class="grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-1 md:mt-14">
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img id="#add hover:inline-block" class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_1.jpg" alt="Shoes" />
                         <p id="add" class="hidden hover:inline-block">Add to cart</p>
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -250,25 +251,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_2-1.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_2-1.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -278,25 +279,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_3-1.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_3-1.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -306,25 +307,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_4.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_4.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -334,25 +335,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_5-1.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_5-1.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -362,25 +363,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_6.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_6.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -390,25 +391,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_7.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product_7.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -418,25 +419,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-none">
-                    <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_8-1.jpg" alt="Shoes" />
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px] w-full" src="./asstes/product_8-1.jpg" alt="Shoes" />
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
-                            <p>Dress</p>
+                            <p class="md:text-lg text-sm">Dress</p>
                             <div class="rating gap-1">
-                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
                                     checked="checked" />
                             </div>
                         </div>
                         <p>Cropped Faux Leather Jacket $29</p>
                         <div class="card-actions justify-between">
-                            <div>
+                            <div class="hidden md:flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -446,24 +447,25 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                             </div>
-                            <span>8k+ reviews</span>
+                            <span class="md:flex hidden">8k+ reviews</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="template w-11/12 mx-auto mt-12 p-20">
-            <div class="ml-24 py-12">
+        <!-- timer section styles -->
+        <section class="template w-11/12 mx-auto mt-12 md:p-20 p-5">
+            <div class="md:ml-24 md:py-12 py-4">
                 <div class="text-[#c32929] uppercase font-semibold flex items-center gap-4 mb-10">
                     <div class="bg-[#c32929] w-14 h-1"></div>
                     <p>Deal of the week</p>
                 </div>
-                <h3 class="text-7xl font-medium uppercase text-left mb-10"><span class="font-bold ">Spring</span>
+                <h3 class="md:text-7xl text-2xl font-medium uppercase text-left mb-10"><span class="font-bold ">Spring</span>
                     Collection
                 </h3>
                 <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer my-4">Shop now</span>
                 <!-- times section -->
-                <div class="my-10">
+                <div class="md:my-10 my-3">
                     <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
@@ -493,6 +495,7 @@
                 </div>
             </div>
         </section>
+        <!-- display section divider -->
         <section class="divider-content md:w-4/5 mx-auto my-14">
             <div>
                 <div class="flex md:flex-row flex-col p-3 w-full gap-5">
@@ -665,7 +668,7 @@
     <footer class=" bg-[#E4E4E4] py-28">
         <div class="footer md:w-4/5 mx-auto text-base-content gap-5 justify-between md:mb-10 mb-4 md:grid-cols-4 grid-cols-2 p-3">
             <nav class=" gap-4">
-                <div><img src="/asstes/logo.png" alt=""></div>
+                <div><img class="w-full" src="/asstes/logo.png" alt=""></div>
                 <a class="link link-hover my-4">
                     <p>1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
                 </a>
@@ -705,16 +708,16 @@
             <form>
                 <h6 class="footer-title">Subscribe</h6>
                 <p class=" w-full md:w-4/5 mb-3">Be the first to get the latest news about trends, promotions, and much more!</p>
-                <div class="bg-white ">
-                    <fieldset class="form-control w-80">
-                        <div class="join justify-around py-2">
+                <div class="bg-white w-full px-10">
+                    <fieldset class="form-control">
+                        <div class="join justify-between py-2">
                             <input type="text" placeholder="username@site.com" class="border-none outline-0 py-2" />
                             <button class="join-item uppercase tex-black font-medium">join</button>
                         </div>
                     </fieldset>
                 </div>
                 <p class="text-lg font-medium capitalize mt-4">Secure payments</p>
-                <img src="./asstes/payment-options.png" alt="">
+                <img class="w-4/5" src="./asstes/payment-options.png" alt="">
             </form>
         </div>
         <div class="w-4/5 bg-gray-400 mx-auto h-[2px] text-gray-500"></div>
