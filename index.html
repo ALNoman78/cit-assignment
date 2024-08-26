@@ -212,7 +212,8 @@
                     <h3 class="text-center font-semibold text-4xl">Our Trendy <span class="font-bold">Products</span>
                     </h3>
                 </div>
-                <div class="flex items-center justify-center gap-5 text-gray-500 text-xl font-medium uppercase mt-8 -pb-4">
+                <div
+                    class="flex items-center justify-center gap-5 text-gray-500 text-xl font-medium uppercase mt-8 -pb-4">
                     <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
                         ALL</p>
                     <p class="hover:border-b-2 hover:border-solid hover:border-black hover:text-black cursor-pointer">
@@ -226,7 +227,8 @@
             <div class="grid md:grid-cols-4 grid-cols-1 gap-8 md:mt-14">
                 <div class="card rounded-none">
                     <figure class="h-[430px]">
-                        <img class="" src="./asstes/product_1.jpg" alt="Shoes" />
+                        <img id="#add hover:inline-block" class="" src="./asstes/product_1.jpg" alt="Shoes" />
+                        <p id="add" class="hidden hover:inline-block">Add to cart</p>
                     </figure>
                     <div class="card-body px-0">
                         <div class="flex items-center justify-between">
@@ -456,7 +458,8 @@
                     <div class="bg-[#c32929] w-14 h-1"></div>
                     <p>Deal of the week</p>
                 </div>
-                <h3 class="text-7xl font-medium uppercase text-left mb-10"><span class="font-bold ">Spring</span> Collection
+                <h3 class="text-7xl font-medium uppercase text-left mb-10"><span class="font-bold ">Spring</span>
+                    Collection
                 </h3>
                 <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer my-4">Shop now</span>
                 <!-- times section -->
@@ -500,7 +503,9 @@
                         <div class="content-text text-white absolute bottom-8 left-6">
                             <p class="font-medium text-xl">Starting At $19</p>
                             <h3 class="text-2xl font-medium my-4">Women's T-Shirts</h3>
-                            <span class="text-lg uppercase border-b-2 border-solid border-white cursor-pointer my-4">Shop now</span>
+                            <span
+                                class="text-lg uppercase border-b-2 border-solid border-white cursor-pointer my-4">Shop
+                                now</span>
                         </div>
                     </div>
                     <div class="card rounded-box grid flex-grow ">
@@ -510,10 +515,146 @@
                         <div class="content-text text-black absolute bottom-8 left-6">
                             <p class="font-medium text-xl">Starting At $19</p>
                             <h3 class="text-2xl font-medium my-4">Women's T-Shirts</h3>
-                            <span class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer my-4">Shop now</span>
+                            <span
+                                class="text-lg uppercase border-b-2 border-solid border-black cursor-pointer my-4">Shop
+                                now</span>
                         </div>
                     </div>
-                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-items-container w-4/5 mx-auto">
+            <div>
+                <h3 class="text-4xl font-medium text-center uppercase my-12">Limited <span class="font-bold">Edition</span></h3>
+            </div>
+            <div>
+                <div class="carousel w-full gap-5 animate-carousel-slide">
+                    <div id="item1" class="carousel-item md:w-[24%] w-full flex-col">
+                        <img id="noman" src="./asstes/product-0-1.jpg" class="w-full" />
+                        <div class="card-body px-0">
+                            <div class="flex items-center justify-between">
+                                <p>Dress</p>
+                                <div class="rating gap-1">
+                                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                        checked="checked" />
+                                </div>
+                            </div>
+                            <p>Cropped Faux Leather Jacket $29</p>
+                            <div class="card-actions justify-between">
+                                <span>$53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other items -->
+                    <div id="item2" class="carousel-item md:w-[24%] w-full flex-col">
+                        <img src="./asstes/product-1-1.jpg" class="w-full" />
+                        <div class="card-body px-0">
+                            <div class="flex items-center justify-between">
+                                <p>Dress</p>
+                                <div class="rating gap-1">
+                                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                        checked="checked" />
+                                </div>
+                            </div>
+                            <p>Cropped Faux Leather Jacket $29</p>
+                            <div class="card-actions justify-between">
+                                <span>$53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other items -->
+                    <div id="item3" class="carousel-item md:w-[24%] w-full flex-col">
+                        <img src="./asstes/product-2-1.jpg" class="w-full" />
+                        <div class="card-body px-0">
+                            <div class="flex items-center justify-between">
+                                <p>Dress</p>
+                                <div class="rating gap-1">
+                                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                        checked="checked" />
+                                </div>
+                            </div>
+                            <p>Cropped Faux Leather Jacket $29</p>
+                            <div class="card-actions justify-between">
+                                <span>$53</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for other items -->
+                    <div id="item4" class="carousel-item md:w-[24%] w-full flex-col">
+                        <img src="./asstes/product-3-1.jpg" class="w-full" />
+                        <div class="card-body px-0">
+                            <div class="flex items-center justify-between">
+                                <p>Dress</p>
+                                <div class="rating gap-1">
+                                    <input type="radio" name="rating-3" class="mask mask-heart bg-red-400"
+                                        checked="checked" />
+                                </div>
+                            </div>
+                            <p>Cropped Faux Leather Jacket $29</p>
+                            <div class="card-actions justify-between">
+                                <span>$53</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full justify-center gap-2 py-2">
+                    
+                    <a href="#item1" class="">
+                        <input id="#item1" type="radio" name="radio-1" class="radio" checked="checked" />
+                    </a>
+                    <a href="#item2" class=" ">
+                        <input id="#item2" type="radio" name="radio-1" class="radio" checked="checked" />
+                    </a>
+                    <a href="#item3" class=" ">
+                        <input id="#item3" type="radio" name="radio-1" class="radio" checked="checked" />
+                    </a>
+                    <a href="#item4" class=" ">
+                        <input id="#item4" type="radio" name="radio-1" class="radio" checked="checked" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="md:w-4/5 w-full mx-auto my-10">
+            <div class="my-12">
+                <h3 class="uppercase text-4xl font-semibold text-center">@uomo</h3>
+            </div>
+            <div class="grid grid-cols-6 gap-2 ">
+                <div class="hover:ease-in-out">
+                    <img class="" src="./asstes/insta1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta9.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta10.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta11.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./asstes/insta12.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>
