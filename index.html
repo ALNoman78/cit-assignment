@@ -495,10 +495,10 @@
         </section>
         <section class="divider-content md:w-4/5 mx-auto my-14">
             <div>
-                <div class="flex w-full gap-5">
+                <div class="flex md:flex-row flex-col p-3 w-full gap-5">
                     <div class="card rounded-box grid flex-grow">
                         <div class="relative ">
-                            <img class="h-[400px] w-full object-cover" src="./asstes/banner_1.jpg" alt="">
+                            <img class="md:h-[400px] h-auto w-full object-cover" src="./asstes/banner_1.jpg" alt="">
                         </div>
                         <div class="content-text text-white absolute bottom-8 left-6">
                             <p class="font-medium text-xl">Starting At $19</p>
@@ -510,7 +510,7 @@
                     </div>
                     <div class="card rounded-box grid flex-grow ">
                         <div class="relative ">
-                            <img class="h-[400px] w-full object-cover" src="./asstes/banner_2.jpg" alt="">
+                            <img class="md:h-[400px] h-auto w-full object-cover" src="./asstes/banner_2.jpg" alt="">
                         </div>
                         <div class="content-text text-black absolute bottom-8 left-6">
                             <p class="font-medium text-xl">Starting At $19</p>
@@ -523,10 +523,11 @@
                 </div>
             </div>
         </section>
+        <!-- carousel section -->
         <section class="product-items-container w-4/5 mx-auto">
             <div>
                 <h3 class="text-4xl font-medium text-center uppercase my-12">Limited <span
-                        class="font-bold">Edition</span></h3>
+                class="font-bold">Edition</span></h3>
             </div>
             <div>
                 <div class="carousel w-full gap-5 animate-carousel-slide">
@@ -615,11 +616,12 @@
                 </div>
             </div>
         </section>
+        <!-- images section -->
         <section class="md:w-4/5 w-full mx-auto my-10">
             <div class="my-12">
                 <h3 class="uppercase text-4xl font-semibold text-center">@uomo</h3>
             </div>
-            <div class="grid grid-cols-6 gap-2 ">
+            <div class="grid md:grid-cols-6 grid-cols-3 gap-2 ">
                 <div class="hover:ease-in-out">
                     <img class="" src="./asstes/insta1.jpg" alt="">
                 </div>
@@ -661,7 +663,7 @@
     </main>
     <!-- footer section styles  -->
     <footer class=" bg-[#E4E4E4] py-28">
-        <div class="footer md:w-4/5 mx-auto text-base-content gap-5 justify-between md:mb-10 mb-4">
+        <div class="footer md:w-4/5 mx-auto text-base-content gap-5 justify-between md:mb-10 mb-4 md:grid-cols-4 grid-cols-2 p-3">
             <nav class=" gap-4">
                 <div><img src="/asstes/logo.png" alt=""></div>
                 <a class="link link-hover my-4">
@@ -702,7 +704,7 @@
             </nav>
             <form>
                 <h6 class="footer-title">Subscribe</h6>
-                <p>Be the first to get the latest news about trends, promotions, and much more!</p>
+                <p class=" w-full md:w-4/5 mb-3">Be the first to get the latest news about trends, promotions, and much more!</p>
                 <div class="bg-white ">
                     <fieldset class="form-control w-80">
                         <div class="join justify-around py-2">
@@ -715,7 +717,16 @@
                 <img src="./asstes/payment-options.png" alt="">
             </form>
         </div>
-        <div class="w-4/5 bg-black mx-auto h-1 text-gray-500"></div>
+        <div class="w-4/5 bg-gray-400 mx-auto h-[2px] text-gray-500"></div>
+        <div class="flex justify-between items-center md:w-4/5 mx-auto md:flex-row md:my-12 my-5 flex-col">
+            <div>©2023 Uomo</div>
+            <div class="flex flex-col gap-4 items-center md:flex-row">
+                <p>Language</p>
+                <p class="font-medium cursor-pointer">United Kingdom</p>
+                <p class="font-medium cursor-pointer">  | English</p>
+                <p class="font-medium cursor-pointer">Currency</p>
+            </div>
+        </div>
     </footer>
     <!-- footer section end -->
 </body>
