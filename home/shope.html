@@ -15,6 +15,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/d0e17ced7d.js" crossorigin="anonymous"></script>
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- config tailwind -->
     <script>
         tailwind.config = {
@@ -33,6 +35,18 @@
             },
         }
     </script>
+    <style>
+        .swiper {
+            width: 60%;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body class="font-jostFont">
@@ -72,8 +86,8 @@
                 </div>
             </div>
             <!-- main nav styles -->
-            <div class="bg-transparent">
-                <div class="navbar md:w-11/12  mx-16 mt-4 z-10">
+            <div class="">
+                <div class="navbar md:w-11/12 mx-16 mt-4 z-10">
                     <div class="navbar-start">
                         <div class="dropdown">
                             <div tabindex="0" role="button" class="btn btn-ghost ">
@@ -223,12 +237,15 @@
         </nav>
     </header>
     <main>
+        <!-- product preview section -->
         <section class="preview-container">
             <div class="md:w-3/4 mx-auto">
                 <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
                     <div>
-                        <img class="relative" src="./asstes/grid_banner_1.jpg" alt="">
-                        <div class="absolute md:left-[24.25rem] md:-bottom-[25rem] text-center">
+                        <div>
+                            <img class="relative" src="./asstes/grid_banner_1.jpg" alt="">
+                        </div>
+                        <div class="absolute left-[25%] top-[130%] transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <h3 class="font-semibold uppercase md:text-3xl my-2">New <br>
                                 Horizons</h3>
                             <span class="uppercase border-b-2 border-solid border-black font-medium">Shop Now</span>
@@ -236,7 +253,8 @@
                     </div>
                     <div>
                         <img class="relative" src="./asstes/grid_banner_2.jpg" alt="">
-                        <div class="absolute md:left-[55.25rem] md:-bottom-[25rem] text-center">
+                        <div
+                            class="absolute left-[50%] top-[130%] transform -translate-x-1/2 -translate-y-1/2 text-center">
                             <h3 class="font-semibold uppercase md:text-3xl my-2">New <br>
                                 Horizons</h3>
                             <span class="uppercase border-b-2 border-solid border-black font-medium">Shop Now</span>
@@ -250,6 +268,175 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- items section  -->
+        <section class="items-container mt-20  md:w-10/12 mx-auto hidden">
+            <div>
+                <div class="content-text">
+                    <h3 class="text-center font-semibold md:text-4xl text-3xl">Our Trendy <span
+                            class="font-bold">Products</span>
+                    </h3>
+                </div>
+                <div
+                    class="flex items-center justify-center gap-5 text-gray-500 font-medium uppercase mt-8 pb-4 md:text-xl text-sm flex-wrap">
+                    <p class="border-b-2 border-solid border-black duration-200 text-black cursor-pointer">
+                        ALL</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        New Arrivals</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        Best Seller</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        Top Rated</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-1 md:mt-14">
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img id="#add hover:inline-block" class="object-cover md:h-[430px] h-[200px]"
+                            src="./asstes/product-0-1.jpg" alt="Shoes" />
+                        <p id="add" class="hidden hover:inline-block">Add to cart</p>
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p class="md:text-lg text-sm">Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
+                                    checked="checked" />
+                            </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket</p>
+                        <span>$54</span>
+                    </div>
+                </div>
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product-1-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p class="md:text-lg text-sm">Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
+                                    checked="checked" />
+                            </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket</p>
+                        <span>$30</span>
+                    </div>
+                </div>
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product-2-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p class="md:text-lg text-sm">Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
+                                    checked="checked" />
+                            </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket</p>
+                        <span>$29</span>
+                    </div>
+                </div>
+                <div class="card rounded-none p-2">
+                    <figure class="">
+                        <img class="object-cover md:h-[430px] h-[200px]" src="./asstes/product-3-1.jpg" alt="Shoes" />
+                    </figure>
+                    <div class="card-body px-0">
+                        <div class="flex items-center justify-between">
+                            <p class="md:text-lg text-sm">Dress</p>
+                            <div class="rating gap-1">
+                                <input type="radio" name="rating-3" class="mask mask-heart bg-red-400 h-4 md:h-[1.5rem]"
+                                    checked="checked" />
+                            </div>
+                        </div>
+                        <p>Cropped Faux Leather Jacket </p>
+                        <span class="md:flex hidden">$29</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- carousel items section -->
+        <!-- Swiper -->
+        <section class="my-14">
+            v>
+                <div class="content-text">
+                    <h3 class="text-center font-bold md:text-4xl text-3xl uppercase">Best Selling
+                    </h3>
+                </div>
+                <div
+                    class="flex items-center justify-center gap-5 text-gray-500 font-medium uppercase mt-8 pb-4 md:text-xl text-sm flex-wrap mb-8">
+                    <p class="border-b-2 border-solid border-black duration-200 text-black cursor-pointer">
+                        ALL</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        New Arrivals</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        Best Seller</p>
+                    <p
+                        class="hover:border-b-2 border-solid hover:border-black duration-150  hover:text-black cursor-pointer ">
+                        Top Rated</p>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./asstes/product-0-1.jpg" alt="">
+                        <div>
+                            <p>JEAN</p>
+                            <h3>Kirby T-Shirt</h3>
+                            <p>$17</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./asstes/product-1-1.jpg" alt="">
+                        <div>
+                            <p>JEAN</p>
+                            <h3>Kirby T-Shirt</h3>
+                            <p>$17</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./asstes/product-2-1.jpg" alt="">
+                        <div>
+                            <p>JEAN</p>
+                            <h3>Kirby T-Shirt</h3>
+                            <p>$17</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./asstes/product-3-1.jpg" alt="">
+                        <div>
+                            <p>JEAN</p>
+                            <h3>Kirby T-Shirt</h3>
+                            <p>$17</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
         </section>
     </main>
 </body>
